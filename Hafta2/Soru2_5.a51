@@ -8,10 +8,13 @@
 		x:
 		
 			CJNE R0,#4Fh,x1;			//Adres byte degeri ile veriyi kontrol ediyor
+								//Bu islemden sonra elde biti setlenir.
+								//toplama, cıkartma gibi islemler yapılacakasa 
+								//once elde biti temizlenmeli.
 			
 				x1:
 						mov a,R1;		//*
-						mov @R0,a;		//* veriyi R0 g�sterdigi yere atiyor
+						mov @R0,a;		//* veriyi R0 gösterdigi yere atiyor
 						dec R1;			//**
 						dec R0;			//** byte adresini ve veriyi 1 azaltiyor 
 						djnz R2,x;		//16 defa bu atamayi yapacak
