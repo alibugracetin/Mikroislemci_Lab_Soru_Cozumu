@@ -10,7 +10,20 @@
 			CJNE R0,#4Fh,x1;			//Adres byte degeri ile veriyi kontrol ediyor
 								//Bu islemden sonra elde biti setlenir.
 								//toplama, cıkartma gibi islemler yapılacakasa 
-								//once elde biti temizlenmeli.
+								//once elde biti temizlenmel
+								;ELDE BITININ OLUSMA SEBEBI
+								;CJNE Rn, #immediate, offset
+								;CJNE
+								;PC = PC + 3
+								;IF Rn <> immedate
+								  ;PC = PC + offset
+								;IF Rn < immediate
+				 				  ;C = 1
+								;ELSE
+								  ;C = 0
+									
+								;kaynak
+								;http://www.keil.com/support/man/docs/is51/is51_cjne.htm								
 			
 				x1:
 						mov a,R1;		//*
