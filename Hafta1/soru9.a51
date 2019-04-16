@@ -1,5 +1,5 @@
 org 00h
-	//Soru1_7
+	
 	
 	sjmp basla
 	basla:
