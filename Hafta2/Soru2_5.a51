@@ -7,10 +7,10 @@
 		mov R2,#16d;
 		x:
 		
-			CJNE R0,#4Fh,x1;			//Adres byte degeri ile veriyi kontrol ediyor
-								//Bu islemden sonra elde biti setlenir.
-								//toplama, cıkartma gibi islemler yapılacakasa 
-								//once elde biti temizlenmel
+			CJNE R0,#4Fh,x1;			;//Adres byte degeri ile veriyi kontrol ediyor
+								;//Bu islemden sonra elde biti setlenir.
+								;//toplama, cıkartma gibi islemler yapılacakasa 
+								;//once elde biti temizlenmel
 								;ELDE BITININ OLUSMA SEBEBI
 								;CJNE Rn, #immediate, offset
 								;CJNE
