@@ -31,7 +31,7 @@ org 00h
 				div ab;
 				addc a,30h;
 				mov 30h,a;
-				
+	
 				dec R0;
 				mov b,#10h;
 				mov a,@R0;
