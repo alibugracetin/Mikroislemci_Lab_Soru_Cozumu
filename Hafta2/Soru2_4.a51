@@ -15,11 +15,11 @@ org 00h
 					
 					mul ab;	  //faktoriyel islemi
 					dec R0;	  //faktoriyrel icin degerleri azaltiyor
-					mov b,R0; //mul ab den sonra b degeri sifir oldugun için b'ye tekrar son olmasi gereken degeri atiyoruz.
+					mov b,R0; //mul ab den sonra b degeri sifir oldugun iÃ§in b'ye tekrar son olmasi gereken degeri atiyoruz.
 					sjmp x2;
 	
-	son:
+					mov P0,a;				//78h = 120d degeri port0 'a gÃ¶nderildi
 	
-	mov P0,a;				//78h = 120d degeri port0 'a gönderildi
+	son:
 	
 	end
