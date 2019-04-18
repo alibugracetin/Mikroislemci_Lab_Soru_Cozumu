@@ -9,23 +9,21 @@ org 00h
 		x2:
 		
 			cjne R0,#70d,X1;			;//bu islemden sonra elde biti setleniyor
-										;//cikartma isleminde elde biti kullanildigi
-										;//icin elde biti temizlenmeli
-										;ELDE BITININ OLUSMA SEBEBI
-											;CJNE Rn, #immediate, offset
-											;CJNE
-											;PC = PC + 3
-											;IF Rn <> immedate
-											  ;PC = PC + offset
-											;IF Rn < immediate
-											  ;C = 1
-											;ELSE
-											  ;C = 0
-											;Example	
-											;CJNE R6, #12H, LABEL
-											
-											;kaynak
-											;http://www.keil.com/support/man/docs/is51/is51_cjne.htm
+								;//cikartma isleminde elde biti kullanildigi
+								;//icin elde biti temizlenmeli
+								;ELDE BITININ OLUSMA SEBEBI
+									;CJNE Rn, #immediate, offset
+									;CJNE
+									;PC = PC + 3
+									;IF Rn <> immedate
+									  ;PC = PC + offset
+									;IF Rn < immediate
+									  ;C = 1
+									;ELSE
+									  ;C = 0
+																				
+									   ;kaynak
+									   ;http://www.keil.com/support/man/docs/is51/is51_cjne.htm
 														
 				x1:
 					
