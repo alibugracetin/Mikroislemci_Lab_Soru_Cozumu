@@ -2,8 +2,8 @@ org 00h
 	sjmp basla
 	basla:
 	mov R0,#8d; port sayisina gore dongu sayisi                     
-	JB P1.0,X3;
-	JNB P1.0,X1; 5 ve 6 satirda P1.0 daki bitin kontolu yapiliyor
+	JNB P1.0,X3;
+	JNB P1.1,X1; 5 ve 6 satirda P1.0 ve P1.1 daki bitin kontolu yapiliyor
 		
 		;sagdan sola dogru
 		;6.satirdaki durumun saglanmasi durumunda
@@ -12,7 +12,7 @@ org 00h
 	
 			mov a,#1h; 
 			X2:
-			JB P1.0,X3;  dongu icerisinde port kontrolu
+
 			mov b,#2h; 
 			mov P3,a; 
 			mul ab;
@@ -28,7 +28,7 @@ org 00h
 	
 				mov a,#80h; 
 				X4:
-				JNB P1.0,X1;
+			
 				mov b,#2h;
 				mov P3,a;
 				div ab;
