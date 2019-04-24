@@ -24,4 +24,5 @@ org 00h
 				mov P2,a;				
 				ret
 	
+	
 	end
