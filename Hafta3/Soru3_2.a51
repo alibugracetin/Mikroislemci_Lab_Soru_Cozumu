@@ -16,7 +16,7 @@ org 00h
 		carp2:
 				rl a;
 				mov P2,a;
-				ret			//alt programin bittigini belirtir
+				ret			;//alt programin bittigini belirtir
 		
 		carp3:
 				mov b,#3h;
