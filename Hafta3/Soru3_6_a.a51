@@ -4,7 +4,7 @@ org 00h
 	
 	mov 01h,#10d; 	//01h adresine tekrar sayisi belirtildi,
 					;//R0 R1 gibi adresser yerine 01h gibi direct
-					;//adres belirtilmesinin sebebi alt ram bölegesinin
+					;//adres belirtilmesinin sebebi alt ram bÃ¶legesinin
 					;//ust seviyesine djnz komutu ile FFh'e tekrar gitmememsi icin
 	
 	mov dptr,#veritabani;  //veritabaninin ilk elemaninin  adresi dptr'ye atandi
