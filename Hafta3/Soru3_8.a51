@@ -8,7 +8,7 @@ org 00h
 	x3:
 	mov a,00h;
 	movc a,@a+dptr;
-	clr c;
+	clr cy;
 	subb a,#16d;	  //eger veritabaninda 16d sayisi bulunursa acc degeri 16d olacaktir
 					;//16d-16=0d olacagindan, 16d sayisi bulunursa p0.1, bulunmassa p0.2 yanacaktir
 	cjne a,#00h,x1;
