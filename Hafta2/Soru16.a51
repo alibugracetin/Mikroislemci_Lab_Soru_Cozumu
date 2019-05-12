@@ -11,7 +11,7 @@ org 00h
 		
 		
 					x1:
-					anl P1,#00001111b;	//yüksek nibble'lar sifirlaniyor.
+					anl P1,#00001111b;	//yÃ¼ksek nibble'lar sifirlaniyor.
 					mov a,P1;			//Portlardan Registere deger atilmadigi icin P1 degerini ACC'ye tasiniyor
 					mov R0,a;
 					mov R1,a;			//kacinci degere kadar toplayacagimin sinirini belirler
