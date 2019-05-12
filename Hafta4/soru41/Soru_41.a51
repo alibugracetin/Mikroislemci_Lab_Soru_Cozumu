@@ -1,5 +1,5 @@
 ;AT89s8253 1 makine çevrimi 1.2usn oldugu için 1 sn için gerekli makine çevrimi:
-;	1 sn/1.2u sn = 833334 çevrim yapar. 16 bitlik zamanlayici kullanilarak yapilacak
+;	1 sn/1.2u sn = 833334 çevrim yapar. 16 bitlik zamanlayici 0 kullanilarak yapilacak
 ;olan bu soruda bu kadar çevrime ulasabilmek için 833334/65535 = 12,716 defa yapilmasi gerekir. 
 ;TL0 ve TH0 sayicilarinin 0 dan 65535 e kadar 12 defa sayip ardindan 46924 den 65535 e kadar 
 ;tekrar saymasi gerekmektedir.46924 sayisi B74Ch sayisina esittir. Düsük nibble TL0'a 
