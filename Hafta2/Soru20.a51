@@ -22,7 +22,7 @@ org 00h
 		
 		   ;//yuksek bitlerin fark alimi isleminde eger sonuc negatif ise elde biti setlenir
 		   ;//eger sonuc pozitif ise elde biti setlenmez. sayini pozitif yada negatif olacagini
-		   ;//bu yöntem ile belirlenir.
+		   ;//bu yÃ¶ntem ile belirlenir.
 		jb cy,x1;		   
 		jnb cy,x2;
 		x1:
