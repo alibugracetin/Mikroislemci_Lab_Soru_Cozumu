@@ -1,8 +1,8 @@
 ;AT89s8253 1 makine çevrimi 1.2usn oldugu için 1 sn için gerekli makine çevrimi:
 ;	1 sn/1.2u sn = 833334 çevrim yapar. 16 bitlik zamanlayici 0 kullanilarak yapilacak
 ;olan bu soruda bu kadar çevrime ulasabilmek için 833334/65535 = 12,716 defa yapilmasi gerekir. 
-;TL0 ve TH0 sayicilarinin 0 dan 65535 e kadar 12 defa sayip ardindan 46924 den 65535 e kadar 
-;tekrar saymasi gerekmektedir.46924 sayisi B74Ch sayisina esittir. Düsük nibble TL0'a 
+;TL0 ve TH0 sayicilarinin 0 dan 65535 e kadar 12 defa sayip ardindan 46924 defa 
+;tekrar saymasi gerekmektedir.65535-46924=18611(sayma işlemine buradan itibaren başlar ve 65535'e kadar gider) sayisi 48b3h sayisina esittir. Düsük nibble TL0'a 
 ;yüksek nibble TH0'a atilmalidir.
 
 	org 00h
@@ -19,8 +19,8 @@
 						   ; degistirmeyecektir. Her sartta timer/counter0 çalisacaktir.
 						   
 		
-		mov tl0,#4ch;
-		mov th0,#0b7h;
+		mov tl0,#0b3h;
+		mov th0,#48h;
 		mov R0,#13d; 12 defa 0 dan 65535'e kadar sayacak 13. sayisi 46924'den 65535'e kadar sayacaktir
 		
 		bekle:	jb P0.0,bekle; 
